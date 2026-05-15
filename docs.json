@@ -224,5 +224,8 @@
   },
   "banner": {
     "content": "Our documentation has been redesignedWe'd love to hear feedback."
+  },
+  "background": {
+    "decoration": "grid"
   }
 }
