@@ -228,7 +228,7 @@
     "dismissible": true
   },
   "background": {
-    "decoration": "grid"
+    "decoration": "gradient"
   },
   "styling": {
     "eyebrows": "breadcrumbs",
