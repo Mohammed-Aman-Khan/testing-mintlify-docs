@@ -11,7 +11,8 @@
         "group": "",
         "pages": [
           "getting_started"
-        ]
+        ],
+        "hidden": true
       },
       {
         "group": "Boards",
