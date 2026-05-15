@@ -228,5 +228,12 @@
   },
   "background": {
     "decoration": "grid"
+  },
+  "styling": {
+    "eyebrows": "breadcrumbs",
+    "latex": true
+  },
+  "icons": {
+    "library": "lucide"
   }
 }
