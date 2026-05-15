@@ -8,7 +8,7 @@
   "navigation": {
     "groups": [
       {
-        "group": "",
+        "group": "Introduction",
         "pages": [
           "getting_started"
         ],
