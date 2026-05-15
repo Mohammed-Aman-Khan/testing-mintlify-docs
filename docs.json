@@ -223,7 +223,8 @@
     "family": "Space Grotesque"
   },
   "banner": {
-    "content": "Our documentation has been redesignedWe'd love to hear feedback."
+    "content": "Our new documentation has been freshly fabricated and assembled with ❤️. We'd love to hear feedback.",
+    "dismissible": true
   },
   "background": {
     "decoration": "grid"
