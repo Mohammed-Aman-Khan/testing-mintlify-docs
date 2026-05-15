@@ -1,5 +1,5 @@
 {
-  "name": "PCBCUPID",
+  "name": "PCB CUPID",
   "favicon": "/images/favicon_PCBcupid.png",
   "theme": "mint",
   "colors": {
@@ -215,5 +215,8 @@
         ]
       }
     ]
+  },
+  "appearance": {
+    "strict": true
   }
 }
