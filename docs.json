@@ -218,5 +218,11 @@
   },
   "appearance": {
     "strict": true
+  },
+  "fonts": {
+    "family": "Space Grotesque"
+  },
+  "banner": {
+    "content": "Our documentation has been redesignedWe'd love to hear feedback."
   }
 }
