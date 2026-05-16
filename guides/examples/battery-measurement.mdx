@@ -7,13 +7,11 @@ description: "Read battery voltage on a Glyph ESP32 board using the onboard volt
 
 This guide will walk you through configuring the [GLYPH-C3 board](https://shop.pcbcupid.com/product/gd001/) to measure the voltage and charge percentage of a Li-ion or Li-Polymer(LiPo) battery. You will learn how to set up the board, connect the battery, and display the voltage readings on the Serial Monitor.
 
-# Current Measurement
+# Voltage Measurement
 
-Battery voltage measurement is the process of determining the electrical potential difference between the positive and negative terminals of a battery. It provides a quantitative value in volts (V), which indicates the charge level and health of the battery. The voltage range of a battery depends on its chemistry (Li-ion, LiPo, NiMH, Lead-Acid, etc.). The correct minimum (empty) and maximum (full) voltage values must be set to measure the charge percentage accurately. You need to update the Battery object with the correct min and max voltages
+Battery voltage measurement is the process of determining the electrical potential difference between the positive and negative terminals of a battery. It provides a quantitative value in volts (V), which indicates the charge level and health of the battery. The voltage range of a battery depends on its chemistry (Li-ion, LiPo, NiMH, Lead-Acid, etc.). The correct minimum (empty) and maximum (full) voltage values must be set to measure the charge percentage accurately. You need to update the Battery object with the correct min and max voltages.
 
 Monitor Battery Health – Helps determine if the battery is functioning properly and whether it needs replacement. Prevent Overcharging & Deep Discharging – Ensures the battery is used within safe voltage limits to prolong its lifespan. Estimate Remaining Charge – Provides an approximate percentage of battery capacity remaining. Optimize Performance – Ensures the battery supplies the correct voltage for efficient device operation. Safety – Prevents excessive discharge or overvoltage conditions that may cause damage or overheating.
-
-This guide will walk you through configuring the [GLYPH-C3 board](https://shop.pcbcupid.com/product/gd001/) to measure the voltage and charge percentage of a Li-ion or Li-Polymer(LiPo) battery. You will learn how to set up the board, connect the battery, and display the voltage readings on the Serial Monitor.
 
 ## Step 1: Hardware Required
 
@@ -191,7 +189,7 @@ void loop() {
 }
 ```
 
-## Step 6: Upload the Code
+## Step 5: Upload the Code
 
 1. **Connect the Board**
 
