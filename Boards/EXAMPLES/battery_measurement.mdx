@@ -1,23 +1,17 @@
 ---
-description: "Read battery voltage on a Glyph ESP32 board using the onboard voltage divider, scale the ADC reading, and report state of charge to the serial monitor."
 title: "Battery Voltage Measurement on Glyph"
+description: "Read battery voltage on a Glyph ESP32 board using the onboard voltage divider, scale the ADC reading, and report state of charge to the serial monitor."
 ---
-# Battery Voltage Measurement
 
-![Battery_charge](https://files.pcbcupid.com/Documentation/Boards/Examples/battery/PCBCUPID_lithiumpolymerbattery_side.avif)
+![Battery\_charge](https://files.pcbcupid.com/Documentation/Boards/Examples/battery/PCBCUPID_lithiumpolymerbattery_side.avif)
 
 This guide will walk you through configuring the [GLYPH-C3 board](https://shop.pcbcupid.com/product/gd001/) to measure the voltage and charge percentage of a Li-ion or Li-Polymer(LiPo) battery. You will learn how to set up the board, connect the battery, and display the voltage readings on the Serial Monitor.
 
-# Battery Voltage Measurement
-Battery voltage measurement is the process of determining the electrical potential difference between the positive and negative terminals of a battery. It provides a quantitative value in volts (V), which indicates the charge level and health of the battery.
-The voltage range of a battery depends on its chemistry (Li-ion, LiPo, NiMH, Lead-Acid, etc.). The correct minimum (empty) and maximum (full) voltage values must be set to measure the charge percentage accurately.
-You need to update the Battery object with the correct min and max voltages
+# Current Measurement
 
-Monitor Battery Health – Helps determine if the battery is functioning properly and whether it needs replacement.
-Prevent Overcharging & Deep Discharging – Ensures the battery is used within safe voltage limits to prolong its lifespan.
-Estimate Remaining Charge – Provides an approximate percentage of battery capacity remaining.
-Optimize Performance – Ensures the battery supplies the correct voltage for efficient device operation.
-Safety – Prevents excessive discharge or overvoltage conditions that may cause damage or overheating.
+Battery voltage measurement is the process of determining the electrical potential difference between the positive and negative terminals of a battery. It provides a quantitative value in volts (V), which indicates the charge level and health of the battery. The voltage range of a battery depends on its chemistry (Li-ion, LiPo, NiMH, Lead-Acid, etc.). The correct minimum (empty) and maximum (full) voltage values must be set to measure the charge percentage accurately. You need to update the Battery object with the correct min and max voltages
+
+Monitor Battery Health – Helps determine if the battery is functioning properly and whether it needs replacement. Prevent Overcharging & Deep Discharging – Ensures the battery is used within safe voltage limits to prolong its lifespan. Estimate Remaining Charge – Provides an approximate percentage of battery capacity remaining. Optimize Performance – Ensures the battery supplies the correct voltage for efficient device operation. Safety – Prevents excessive discharge or overvoltage conditions that may cause damage or overheating.
 
 This guide will walk you through configuring the [GLYPH-C3 board](https://shop.pcbcupid.com/product/gd001/) to measure the voltage and charge percentage of a Li-ion or Li-Polymer(LiPo) battery. You will learn how to set up the board, connect the battery, and display the voltage readings on the Serial Monitor.
 
@@ -29,28 +23,31 @@ This guide will walk you through configuring the [GLYPH-C3 board](https://shop.p
 ## Step 2: Circuit Diagram
 
 #### Circuit Diagram with Lithium Ion Battery:
-![pcbcupid_liion_battery_circuitdiagram](https://files.pcbcupid.com/Documentation/Boards/Examples/battery/PCBCUPID_lithiumionbattery_cirkitdiagram.avif)
+
+![pcbcupid\_liion\_battery\_circuitdiagram](https://files.pcbcupid.com/Documentation/Boards/Examples/battery/PCBCUPID_lithiumionbattery_cirkitdiagram.avif)
 
 #### Circuit Diagram with Lithium Polymer Battery:
-![pcbcupid_lipolymer_battery_circuitdiagram](https://files.pcbcupid.com/Documentation/Boards/Examples/battery/PCBCUPID_lithiumpolymerbattery_circuitdiagram.avif)
+
+![pcbcupid\_lipolymer\_battery\_circuitdiagram](https://files.pcbcupid.com/Documentation/Boards/Examples/battery/PCBCUPID_lithiumpolymerbattery_circuitdiagram.avif)
 
 ## Step 3: Connect the Battery
 
-   * First Short the MSR Pin at the back of the Glyph C3 board
-   * Solder the Positive and Negative leads of the battery to the leads on the back of Glyph C3 which says BAT+ and BAT-
-   * Connect the positive terminal of the battery to the analog input pin on the board.
-   * Connect the negative terminal of the battery to the ground pin on the board.
+- First Short the MSR Pin at the back of the Glyph C3 board
+- Solder the Positive and Negative leads of the battery to the leads on the back of Glyph C3 which says BAT\+ and BAT-
+- Connect the positive terminal of the battery to the analog input pin on the board.
+- Connect the negative terminal of the battery to the ground pin on the board.
 
 <div class="centerImg">
-<img src="https://files.pcbcupid.com/Documentation/Boards/Examples/battery/PCBCUPID_msr_lithiumionbattery.avif" alt= "pcbcupid-smowcode-window-setup" width="600"/>
+  <img src="https://files.pcbcupid.com/Documentation/Boards/Examples/battery/PCBCUPID_msr_lithiumionbattery.avif" alt="pcbcupid-smowcode-window-setup" width="600" />
 </div>
-<br/>
+
+<br />
 
 ## Step 4: Code Setup
 
 1. **Open Arduino IDE.**
 2. Install the **Battery Sense** library by going to `Sketch > Include Library > Manage Libraries` and searching for Battery Sense
-2. Copy and paste the following code into the Arduino IDE:
+3. Copy and paste the following code into the Arduino IDE:
 
 ```cpp
 #include <Battery.h>
@@ -99,10 +96,11 @@ void loop()
 One important thing to understand is that ESP32 ADC readings are not always perfectly accurate.
 
 In real hardware, ADC readings can vary slightly due to:
-* ADC non-linearity
-* Resistor tolerances
-* Board variations
-* Noise
+
+- ADC non-linearity
+- Resistor tolerances
+- Board variations
+- Noise
 
 Because of this, a calibration factor is often used to fine tune the measured voltage.
 
@@ -111,6 +109,7 @@ Example:
 ```cpp
 const float CALIBRATION_FACTOR = 1.14;
 ```
+
  ⁠
 
 This calibration factor compensates for ADC measurement error and helps produce more accurate battery readings.
@@ -124,9 +123,10 @@ This is a very common practice in embedded systems and battery-powered devices.
 While ADC-based battery measurement works well, it still depends on calibration and voltage estimation.
 
 Future revisions of the GLYPH boards may use dedicated LiPo fuel gauge ICs over I2C for:
-* Improved Accuracy
-* Better Battery Estimation
-* More Stable Readings
+
+- Improved Accuracy
+- Better Battery Estimation
+- More Stable Readings
 
 These dedicated chips are specifically designed for battery monitoring applications.
 
@@ -189,44 +189,37 @@ void loop() {
 
 1. **Connect the Board**
 
-*	Connect your GLYPH board to your computer
-   
-2. **Select the Board and Port**
+- Connect your GLYPH board to your computer
 
-   Do the following settings in your Arduino IDE,
-   Do the following settings in your Arduino IDE,
-   - `Tools > Board > esp32 > Pcbcupid GLYPH C3` 
+2. **Select the Board and Port** Do the following settings in your Arduino IDE, Do the following settings in your Arduino IDE,
+   - `Tools > Board > esp32 > Pcbcupid GLYPH C3`
 
 <Warning>
-   For the `Pcbcupid GLYPH C3 ` to appear under `Tools > Board > esp32`, the esp32 board version installed in the Arduino IDE should be greater than or equal to 3.1.0.
+  For the `Pcbcupid GLYPH C3 ` to appear under `Tools > Board > esp32`, the esp32 board version installed in the Arduino IDE should be greater than or equal to 3.1.0.
 </Warning>
 
-   - `Tools > Port` and select the port connected to your GLYPH.
-   - `Tools > USB CDC on Boot >` ***Enabled*** 
+- `Tools > Port` and select the port connected to your GLYPH.
+- `Tools > USB CDC on Boot >` **_Enabled_**
 
 <Warning>
- If `USB CDC on BOOT` not enabled, you won't be seeing any serial data on Arduino IDE. 
+  If `USB CDC on BOOT` not enabled, you won't be seeing any serial data on Arduino IDE.
 </Warning>
 
 3. **Upload the Code**
 
-- Click the upload button (➡️ icon) or use the shortcut `CTRL + U` in Arduino IDE to upload the code to the board.
-
-   **Note:** Ensure that the voltage applied to the analog pin does not exceed the maximum allowable voltage (usually 3.3V for the ESP32).
+- Click the upload button (➡️ icon) or use the shortcut `CTRL + U` in Arduino IDE to upload the code to the board. **Note:** Ensure that the voltage applied to the analog pin does not exceed the maximum allowable voltage (usually 3.3V for the ESP32).
 
 ## Step 6: Observe the Output
 
-1. **See the LED Light up** - After soldering the battery leads to the BAT+ & BAT- terminals and connecting your Glyph board to your PC, you can see the onboard led of your Glyph board light up like this:
+1. **See the LED Light up** - After soldering the battery leads to the BAT\+ & BAT- terminals and connecting your Glyph board to your PC, you can see the onboard led of your Glyph board light up like this:
 
-![pcbcupid_bh1750adafruit](https://files.pcbcupid.com/Documentation/Boards/Examples/battery/PCBCUPID_lithiumion_battery.avif)
+![pcbcupid\_bh1750adafruit](https://files.pcbcupid.com/Documentation/Boards/Examples/battery/PCBCUPID_lithiumion_battery.avif)
 
-![pcbcupid_bh1750adafruit](https://files.pcbcupid.com/Documentation/Boards/Examples/battery/PCBCUPID_lithiumpolymerbattery-ledblink.avif)
+![pcbcupid\_bh1750adafruit](https://files.pcbcupid.com/Documentation/Boards/Examples/battery/PCBCUPID_lithiumpolymerbattery-ledblink.avif)
 
 2. **Open Serial Monitor**
-
-   * In Arduino IDE, go to`Tools > Serial Monitor` or press`Ctrl+Shift+M` to open the Serial Monitor.
+   - In Arduino IDE, go to`Tools > Serial Monitor` or press`Ctrl+Shift+M` to open the Serial Monitor.
 3. **View Battery Readings**
+   - You should see the current battery voltage & battery charge percentage every second on the Serial Monitor.
 
-   * You should see the current battery voltage & battery charge percentage every second on the Serial Monitor.
-
-![Battery_charge](https://files.pcbcupid.com/Documentation/Boards/Examples/battery/PCBCUPID_lithiumpolymerbattery_serialmon.avif)
+![Battery\_charge](https://files.pcbcupid.com/Documentation/Boards/Examples/battery/PCBCUPID_lithiumpolymerbattery_serialmon.avif)

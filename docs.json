@@ -1,5 +1,5 @@
 {
-  "name": "PCB CUPID",
+  "name": "PCB Cupid",
   "favicon": "/images/favicon_PCBcupid.png",
   "theme": "mint",
   "colors": {
@@ -221,7 +221,7 @@
     "strict": true
   },
   "fonts": {
-    "family": "Space Grotesque"
+    "family": "Space Grotesk"
   },
   "banner": {
     "content": "Our new documentation has been freshly fabricated and assembled with ❤️. We'd love to hear feedback.",
