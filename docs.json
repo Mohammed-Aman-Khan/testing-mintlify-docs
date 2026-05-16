@@ -221,7 +221,8 @@
     "strict": true
   },
   "fonts": {
-    "family": "Space Grotesk"
+    "family": "Space Grotesk",
+    "weight": 400
   },
   "banner": {
     "content": "Our new documentation has been freshly fabricated and assembled with ❤️. We'd love to hear feedback.",
