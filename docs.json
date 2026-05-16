@@ -6,213 +6,228 @@
     "primary": "#0D9373"
   },
   "navigation": {
-    "groups": [
+    "tabs": [
       {
-        "group": "Welcome",
-        "pages": [
-          "index",
-          "Welcome/getting_started"
-        ]
-      },
-      {
-        "group": "Boards",
-        "pages": [
+        "tab": "Documentation",
+        "groups": [
           {
-            "group": "Breakout_boards",
+            "group": "Welcome",
             "pages": [
-              "Boards/Breakout_boards/Qwiic_2_in_1",
-              "Boards/Breakout_boards/Qwiic_4_in_1",
-              "Boards/Breakout_boards/USB-4-in-1",
-              "Boards/Breakout_boards/USB-A Breakout (FEMALE)",
-              "Boards/Breakout_boards/USB-A Breakout (MALE)",
-              "Boards/Breakout_boards/USB-C"
-            ]
-          },
-          {
-            "group": "EXAMPLES",
-            "pages": [
-              "Boards/EXAMPLES/Arduino_IDE_Blink_Led",
-              "Boards/EXAMPLES/Reading_AnalogInput",
-              "Boards/EXAMPLES/battery_measurement",
-              "Boards/EXAMPLES/I2C_Scan_Test",
-              "Boards/EXAMPLES/BH1750adafruit_compatibility",
-              "Boards/EXAMPLES/LCD",
-              "Boards/EXAMPLES/LCD_I2C",
-              "Boards/EXAMPLES/Rotor encoder with glyph c6",
-              "Boards/EXAMPLES/Servo motor with glyph c6",
-              "Boards/EXAMPLES/Stepper_motor_with_DRV8833",
-              "Boards/EXAMPLES/Temperature_Monitoring_using_GLYPH",
-              "Boards/EXAMPLES/display_test",
-              "Boards/EXAMPLES/TemperatureMonitoring-GLYPH+SH1106OLED",
-              "Boards/EXAMPLES/DHT-OneWire_Communication",
+              "Documentation/index",
+              "Documentation/Welcome/getting_started",
               {
-                "group": "AI",
+                "group": "Prerequisites",
                 "pages": [
-                  "Boards/EXAMPLES/AI/ESP32-C3 Voice Chatbot",
-                  "Boards/EXAMPLES/AI/z-claw",
-                  "Boards/EXAMPLES/AI/edge-impulse"
-                ]
-              },
-              {
-                "group": "Basic Sensors",
-                "pages": [
-                  "Boards/EXAMPLES/Basic Sensors/Ultrasonic Sensor",
-                  "Boards/EXAMPLES/Basic Sensors/Flame Sensor",
-                  "Boards/EXAMPLES/Basic Sensors/Infrared Sensor",
-                  "Boards/EXAMPLES/Basic Sensors/LDR",
-                  "Boards/EXAMPLES/Basic Sensors/MQ2 Sensor"
-                ]
-              },
-              {
-                "group": "BLUETOOTH",
-                "pages": [
-                  "Boards/EXAMPLES/BLUETOOTH/bluetoothglyph"
-                ]
-              },
-              {
-                "group": "wifi",
-                "pages": [
-                  "Boards/EXAMPLES/wifi/local webserver to control relay",
-                  "Boards/EXAMPLES/wifi/wifiaccess point"
-                ]
-              },
-              {
-                "group": "zigbee",
-                "pages": [
-                  "Boards/EXAMPLES/zigbee/Arduino_Zigbee_blink"
+                  "Documentation/Welcome/PREREQUISITES/Arduino_IDE_setup",
+                  "Documentation/Welcome/PREREQUISITES/ESP_IDF",
+                  "Documentation/Welcome/PREREQUISITES/Smowcode_IDE_setup",
+                  "Documentation/Welcome/PREREQUISITES/CC-Studio",
+                  "Documentation/Welcome/PREREQUISITES/Glink"
                 ]
               }
             ]
           },
           {
-            "group": "G-Kit",
+            "group": "Modules",
             "pages": [
-              "Boards/G-Kit/SoundBox"
+              {
+                "group": "Glyph",
+                "pages": [
+                  {
+                    "group": "ESP32-C3",
+                    "pages": [
+                      "Documentation/Modules/Glyph/Glyph_ESP32C3/Overview_Glyph_C3",
+                      "Documentation/Modules/Glyph/Glyph_ESP32C3/Pinouts",
+                      "Documentation/Modules/Glyph/Glyph_ESP32C3/Assembly",
+                      "Documentation/Modules/Glyph/Glyph_ESP32C3/Power_Management"
+                    ]
+                  },
+                  {
+                    "group": "ESP32-C6",
+                    "pages": [
+                      "Documentation/Modules/Glyph/Glyph_ESP32C6/Overview_Glyph_C6",
+                      "Documentation/Modules/Glyph/Glyph_ESP32C6/GlyphC6_Pinouts",
+                      "Documentation/Modules/Glyph/Glyph_ESP32C6/GlyphC6_Assembly",
+                      "Documentation/Modules/Glyph/Glyph_ESP32C6/Glyph ESP32-C6 Power Management"
+                    ]
+                  },
+                  {
+                    "group": "ESP32-H2",
+                    "pages": [
+                      "Documentation/Modules/Glyph/Glyph_ESP32H2/Overview_Glyph_H2",
+                      "Documentation/Modules/Glyph/Glyph_ESP32H2/pinouts_h2",
+                      "Documentation/Modules/Glyph/Glyph_ESP32H2/glyph_assembly",
+                      "Documentation/Modules/Glyph/Glyph_ESP32H2/power_management_glyph"
+                    ]
+                  },
+                  {
+                    "group": "ESP32-S3",
+                    "pages": [
+                      "Documentation/Modules/Glyph/Glyph_ESP32S3/Glyph-S3 Overview",
+                      "Documentation/Modules/Glyph/Glyph_ESP32S3/Glyph ESP32-S3 Pinouts",
+                      "Documentation/Modules/Glyph/Glyph_ESP32S3/Glyph ESP32-S3 Assembly",
+                      "Documentation/Modules/Glyph/Glyph_ESP32S3/Glyph ESP32-S3 Power Management"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "G-Mod",
+                "pages": [
+                  "Documentation/Modules/G-Mod/1-ch-relay",
+                  "Documentation/Modules/G-Mod/relay",
+                  "Documentation/Modules/G-Mod/SD-Card",
+                  "Documentation/Modules/G-Mod/MCP79412 -RTC",
+                  "Documentation/Modules/G-Mod/PCF8563-RTC",
+                  "Documentation/Modules/G-Mod/Limit Switch",
+                  "Documentation/Modules/G-Mod/WS2812B-LED",
+                  "Documentation/Modules/G-Mod/key-array",
+                  "Documentation/Modules/G-Mod/Serial-Flash",
+                  "Documentation/Modules/G-Mod/Motor driver",
+                  "Documentation/Modules/G-Mod/_Lithium charger"
+                ]
+              },
+              {
+                "group": "G-Sense",
+                "pages": [
+                  "Documentation/Modules/G-Sense/Microphone",
+                  "Documentation/Modules/G-Sense/2-Channel Microphone",
+                  "Documentation/Modules/G-Sense/SHT35",
+                  "Documentation/Modules/G-Sense/SHT45",
+                  "Documentation/Modules/G-Sense/hdc3020-rs485",
+                  "Documentation/Modules/G-Sense/QMC6309-magnetometer",
+                  "Documentation/Modules/G-Sense/Capacitive Touch Slider"
+                ]
+              },
+              {
+                "group": "Breakout Boards",
+                "pages": [
+                  "Documentation/Modules/Breakout_boards/Qwiic_2_in_1",
+                  "Documentation/Modules/Breakout_boards/Qwiic_4_in_1",
+                  "Documentation/Modules/Breakout_boards/USB-4-in-1",
+                  "Documentation/Modules/Breakout_boards/USB-A Breakout (FEMALE)",
+                  "Documentation/Modules/Breakout_boards/USB-A Breakout (MALE)",
+                  "Documentation/Modules/Breakout_boards/USB-C"
+                ]
+              },
+              {
+                "group": "G-Kit",
+                "pages": [
+                  "Documentation/Modules/G-Kit/SoundBox"
+                ]
+              }
             ]
           },
           {
-            "group": "G-Mod",
+            "group": "Enclosure",
             "pages": [
-              "Boards/G-Mod/1-ch-relay",
-              "Boards/G-Mod/relay",
-              "Boards/G-Mod/SD-Card",
-              "Boards/G-Mod/MCP79412 -RTC",
-              "Boards/G-Mod/PCF8563-RTC",
-              "Boards/G-Mod/Limit Switch",
-              "Boards/G-Mod/WS2812B-LED",
-              "Boards/G-Mod/key-array",
-              "Boards/G-Mod/Serial-Flash",
-              "Boards/G-Mod/Motor driver",
-              "Boards/G-Mod/_Lithium charger"
-            ]
-          },
-          {
-            "group": "G-Sense",
-            "pages": [
-              "Boards/G-Sense/Microphone",
-              "Boards/G-Sense/2-Channel Microphone",
-              "Boards/G-Sense/SHT35",
-              "Boards/G-Sense/SHT45",
-              "Boards/G-Sense/hdc3020-rs485",
-              "Boards/G-Sense/QMC6309-magnetometer",
-              "Boards/G-Sense/Capacitive Touch Slider"
-            ]
-          },
-          {
-            "group": "Glyph_ESP32C3",
-            "pages": [
-              "Boards/Glyph_ESP32C3/Overview_Glyph_C3",
-              "Boards/Glyph_ESP32C3/Pinouts",
-              "Boards/Glyph_ESP32C3/Assembly",
-              "Boards/Glyph_ESP32C3/Power_Management"
-            ]
-          },
-          {
-            "group": "Glyph_ESP32C6",
-            "pages": [
-              "Boards/Glyph_ESP32C6/Overview_Glyph_C6",
-              "Boards/Glyph_ESP32C6/GlyphC6_Pinouts",
-              "Boards/Glyph_ESP32C6/GlyphC6_Assembly",
-              "Boards/Glyph_ESP32C6/Glyph ESP32-C6 Power Management"
-            ]
-          },
-          {
-            "group": "Glyph_ESP32H2",
-            "pages": [
-              "Boards/Glyph_ESP32H2/Overview_Glyph_H2",
-              "Boards/Glyph_ESP32H2/pinouts_h2",
-              "Boards/Glyph_ESP32H2/glyph_assembly",
-              "Boards/Glyph_ESP32H2/power_management_glyph"
-            ]
-          },
-          {
-            "group": "Glyph_ESP32S3",
-            "pages": [
-              "Boards/Glyph_ESP32S3/Glyph-S3 Overview",
-              "Boards/Glyph_ESP32S3/Glyph ESP32-S3 Pinouts",
-              "Boards/Glyph_ESP32S3/Glyph ESP32-S3 Assembly",
-              "Boards/Glyph_ESP32S3/Glyph ESP32-S3 Power Management"
-            ]
-          },
-          {
-            "group": "PREREQUISITES",
-            "pages": [
-              "Boards/PREREQUISITES/Arduino_IDE_setup",
-              "Boards/PREREQUISITES/ESP_IDF",
-              "Boards/PREREQUISITES/Smowcode_IDE_setup",
-              "Boards/PREREQUISITES/CC-Studio",
-              "Boards/PREREQUISITES/Glink"
+              "Documentation/Enclosure/3D Printed Enclosure for GLYPH ESP32 Boards"
             ]
           }
         ]
       },
       {
-        "group": "Enclosure",
-        "pages": [
-          "Enclosure/3D Printed Enclosure for GLYPH ESP32 Boards"
-        ]
-      },
-      {
-        "group": "PCB DESIGN",
-        "pages": [
+        "tab": "Guides",
+        "groups": [
           {
-            "group": "EASYEDA",
+            "group": "Project Examples",
             "pages": [
-              "PCB DESIGN/EASYEDA/EASYEDA_INTRO",
-              "PCB DESIGN/EASYEDA/IP5306_Battery_Management",
-              "PCB DESIGN/EASYEDA/Custom_symbol_in_EasyEDA",
-              "PCB DESIGN/EASYEDA/Assigning_footprint_in_EasyEDA",
-              "PCB DESIGN/EASYEDA/tp5640 pcblayout",
-              "PCB DESIGN/EASYEDA/DRC_&_Gerber_Generation"
+              "Guides/EXAMPLES/Arduino_IDE_Blink_Led",
+              "Guides/EXAMPLES/Reading_AnalogInput",
+              "Guides/EXAMPLES/battery_measurement",
+              "Guides/EXAMPLES/I2C_Scan_Test",
+              "Guides/EXAMPLES/BH1750adafruit_compatibility",
+              "Guides/EXAMPLES/LCD",
+              "Guides/EXAMPLES/LCD_I2C",
+              "Guides/EXAMPLES/Rotor encoder with glyph c6",
+              "Guides/EXAMPLES/Servo motor with glyph c6",
+              "Guides/EXAMPLES/Stepper_motor_with_DRV8833",
+              "Guides/EXAMPLES/Temperature_Monitoring_using_GLYPH",
+              "Guides/EXAMPLES/display_test",
+              "Guides/EXAMPLES/TemperatureMonitoring-GLYPH+SH1106OLED",
+              "Guides/EXAMPLES/DHT-OneWire_Communication",
+              {
+                "group": "AI",
+                "pages": [
+                  "Guides/EXAMPLES/AI/ESP32-C3 Voice Chatbot",
+                  "Guides/EXAMPLES/AI/z-claw",
+                  "Guides/EXAMPLES/AI/edge-impulse"
+                ]
+              },
+              {
+                "group": "Basic Sensors",
+                "pages": [
+                  "Guides/EXAMPLES/Basic Sensors/Ultrasonic Sensor",
+                  "Guides/EXAMPLES/Basic Sensors/Flame Sensor",
+                  "Guides/EXAMPLES/Basic Sensors/Infrared Sensor",
+                  "Guides/EXAMPLES/Basic Sensors/LDR",
+                  "Guides/EXAMPLES/Basic Sensors/MQ2 Sensor"
+                ]
+              },
+              {
+                "group": "Bluetooth",
+                "pages": [
+                  "Guides/EXAMPLES/BLUETOOTH/bluetoothglyph"
+                ]
+              },
+              {
+                "group": "WiFi",
+                "pages": [
+                  "Guides/EXAMPLES/wifi/local webserver to control relay",
+                  "Guides/EXAMPLES/wifi/wifiaccess point"
+                ]
+              },
+              {
+                "group": "Zigbee",
+                "pages": [
+                  "Guides/EXAMPLES/zigbee/Arduino_Zigbee_blink"
+                ]
+              }
             ]
           },
           {
-            "group": "KICAD",
+            "group": "PCB Design",
             "pages": [
-              "PCB DESIGN/KICAD/Introduction_On_KiCad",
-              "PCB DESIGN/KICAD/Kicad_User_Interface",
-              "PCB DESIGN/KICAD/Schematic_Editor",
-              "PCB DESIGN/KICAD/Prettify_Your_Schematic",
-              "PCB DESIGN/KICAD/Performing_ERC_&_Verify_Circuit_In_KiCAD",
-              "PCB DESIGN/KICAD/Select_The_Best_Footprint",
-              "PCB DESIGN/KICAD/KiCAD\u2019s_Footprint_Assignment_Tool",
-              "PCB DESIGN/KICAD/PCB_STACKUP",
-              "PCB DESIGN/KICAD/Constraints_and_Net_Class",
-              "PCB DESIGN/KICAD/PCB_Layout_editor",
-              "PCB DESIGN/KICAD/PCB_Routing",
-              "PCB DESIGN/KICAD/DRC_In_KiCad",
-              "PCB DESIGN/KICAD/Generate_Gerber_file_In_KiCad",
-              "PCB DESIGN/KICAD/Custom_Symbols_in_KiCad",
-              "PCB DESIGN/KICAD/Custom_Footprints_in_KiCad",
-              "PCB DESIGN/KICAD/Optimize_PCB_in_KiCad"
+              {
+                "group": "EasyEDA",
+                "pages": [
+                  "Guides/PCB DESIGN/EASYEDA/EASYEDA_INTRO",
+                  "Guides/PCB DESIGN/EASYEDA/IP5306_Battery_Management",
+                  "Guides/PCB DESIGN/EASYEDA/Custom_symbol_in_EasyEDA",
+                  "Guides/PCB DESIGN/EASYEDA/Assigning_footprint_in_EasyEDA",
+                  "Guides/PCB DESIGN/EASYEDA/tp5640 pcblayout",
+                  "Guides/PCB DESIGN/EASYEDA/DRC_&_Gerber_Generation"
+                ]
+              },
+              {
+                "group": "KiCad",
+                "pages": [
+                  "Guides/PCB DESIGN/KICAD/Introduction_On_KiCad",
+                  "Guides/PCB DESIGN/KICAD/Kicad_User_Interface",
+                  "Guides/PCB DESIGN/KICAD/Schematic_Editor",
+                  "Guides/PCB DESIGN/KICAD/Prettify_Your_Schematic",
+                  "Guides/PCB DESIGN/KICAD/Performing_ERC_&_Verify_Circuit_In_KiCAD",
+                  "Guides/PCB DESIGN/KICAD/Select_The_Best_Footprint",
+                  "Guides/PCB DESIGN/KICAD/KiCAD\u2019s_Footprint_Assignment_Tool",
+                  "Guides/PCB DESIGN/KICAD/PCB_STACKUP",
+                  "Guides/PCB DESIGN/KICAD/Constraints_and_Net_Class",
+                  "Guides/PCB DESIGN/KICAD/PCB_Layout_editor",
+                  "Guides/PCB DESIGN/KICAD/PCB_Routing",
+                  "Guides/PCB DESIGN/KICAD/DRC_In_KiCad",
+                  "Guides/PCB DESIGN/KICAD/Generate_Gerber_file_In_KiCad",
+                  "Guides/PCB DESIGN/KICAD/Custom_Symbols_in_KiCad",
+                  "Guides/PCB DESIGN/KICAD/Custom_Footprints_in_KiCad",
+                  "Guides/PCB DESIGN/KICAD/Optimize_PCB_in_KiCad"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "PCB Orders",
+            "pages": [
+              "Guides/PCB Orders/Ordering from LionCircuits website"
             ]
           }
-        ]
-      },
-      {
-        "group": "PCB Orders",
-        "pages": [
-          "PCB Orders/Ordering from LionCircuits website"
         ]
       }
     ]
@@ -225,7 +240,7 @@
     "weight": 400
   },
   "banner": {
-    "content": "Our new documentation has been freshly fabricated and assembled with ❤️. We'd love to hear feedback.",
+    "content": "Our new documentation has been freshly fabricated and assembled with \u2764\ufe0f. We'd love to hear feedback.",
     "dismissible": true
   },
   "background": {
