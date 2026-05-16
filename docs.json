@@ -1,4 +1,7 @@
 {
+  "pages": [
+    "documentation/index"
+  ],
   "name": "PCB Cupid",
   "favicon": "/images/favicon_PCBcupid.png",
   "theme": "mint",
