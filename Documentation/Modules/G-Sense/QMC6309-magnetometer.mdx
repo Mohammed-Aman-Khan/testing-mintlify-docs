@@ -3,21 +3,70 @@ description: QMC6309 3-Axis Electronic Compass with I²C interface, high stabili
 title: QMC6309
 ---
 
+export const ShopHeader = ({ title, url }) => (
+  <div style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center', width: '100%', marginBottom: '1rem', gap: '20px' }}>
+    <a href={url} target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', backgroundColor: '#00b894', color: '#fff', padding: '8px 18px', borderRadius: '8px', textDecoration: 'none', fontSize: '0.95rem', fontWeight: 600, whiteSpace: 'nowrap', flexShrink: 0 }}>
+      Shop now
+    </a>
+  </div>
+);
+
+export const ImgGallery = ({ images, modelUrl }) => {
+  var [active, setActive] = useState(0);
+  var [show3D, setShow3D] = useState(false);
+
+
+  useEffect(function () {
+    if (show3D || images.length <= 1) return;
+    var t = setTimeout(function () { setActive(function (p) { return (p + 1) % images.length; }); }, 3500);
+    return function () { clearTimeout(t); };
+  });
+
+  var img = images[active];
+
+  return (
+    <div style={{ position: 'relative', background: 'linear-gradient(to bottom, #fff 0%, #fff 80%, #f8f8f8 100%)', borderRadius: '32px', border: '1px solid rgba(0,0,0,0.08)', overflow: 'hidden', marginTop: '0.75rem', marginBottom: '1.5rem' }}>
+      <div style={{ position: 'relative', height: '450px', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#fff', padding: '1rem' }}>
+        {show3D && modelUrl ? (
+          <div ref={function(el){if(!el||el._mv)return;el._mv=true;var s=document.createElement('script');s.src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.2.0/model-viewer.min.js";s.type="module";s.onload=function(){var mv=document.createElement('model-viewer');mv.setAttribute('src',modelUrl);mv.setAttribute('camera-controls','');mv.setAttribute('auto-rotate','');mv.style.width="100%";mv.style.height="100%";mv.style.backgroundColor="#f8f8f8";el.innerHTML="";el.appendChild(mv);};document.head.appendChild(s);}} style={{width:"100%",height:"100%"}} />
+        ) : (
+          <img src={img && img.url} alt={img && img.label} loading="lazy" style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain', borderRadius: '8px' }} />
+        )}
+      </div>
+      <div style={{ display: 'flex', justifyContent: 'center', gap: '12px', padding: '1rem', background: '#eee', borderTop: '1px solid rgba(0,0,0,0.08)' }}>
+        {images.map(function (img, idx) {
+          return (
+            <button key={img.id || idx} onClick={function () { setActive(idx); setShow3D(false); }} style={{ padding: '0.6rem 1.5rem', borderRadius: '12px', border: !show3D && idx === active ? '1px solid #00b894' : '1px solid rgba(0,184,148,0.4)', background: !show3D && idx === active ? '#00b894' : '#fff', color: !show3D && idx === active ? '#fff' : '#000', cursor: 'pointer', fontSize: '0.75rem', fontWeight: 700, textTransform: 'uppercase', fontFamily: 'inherit' }}>
+              {img.label}
+            </button>
+          );
+        })}
+        {modelUrl ? (
+          <button onClick={function () { setShow3D(true); }} style={{ padding: '0.6rem 1.5rem', borderRadius: '12px', border: show3D ? '1px solid #00b894' : '1px solid rgba(0,184,148,0.4)', background: show3D ? '#00b894' : '#fff', color: show3D ? '#fff' : '#000', cursor: 'pointer', fontSize: '0.75rem', fontWeight: 700, textTransform: 'uppercase', fontFamily: 'inherit' }}>
+            3D VIEW
+          </button>
+        ) : null}
+      </div>
+    </div>
+  );
+};
+
+
+
+<ShopHeader title="QMC6309 Magnetometer" url="https://shop.pcbcupid.com/product/gs005/" />
+<ImgGallery modelUrl="https://raw.githubusercontent.com/pcbcupid/pcbcupid-hardware-libraries/main/pcbcupid_3dmodels/glb/MAGNETOMETER.glb" images={[{url: "https://files.pcbcupid.com/Documentation/Boards/g-sense/qmc6309/magnetometer.avif", label: "ILLUSTRATION VIEW", id: "illustration"}, {url: "https://files.pcbcupid.com/Documentation/Boards/g-sense/qmc6309/pcbcupid-qmc6309-sideview-1-1000x1000.avif", label: "BOARD VIEW", id: "board"}]} />
+
+
+
+<ShopHeader title="QMC6309 Magnetometer" url="https://shop.pcbcupid.com/product/gs005/" />
+
+
 The **QMC6309**, produced by QST Corporation, is a compact and energy-efficient digital magnetometer designed to detect magnetic fields across three axes (X, Y, Z). It integrates both magnetic sensing elements and signal-conditioning circuitry into a single silicon chip.
 
 The QMC6309 stands out as a diminutive, energy-efficient, and accurate 3-axis magnetometer solution, ideal for compact and embedded electronics like VR trackers and flight controllers. With its seamless integration of sensing and signal conditioning, it provides high-precision magnetic field data with minimal PCB footprint.
 
-export const QMC6309_Carousel = () => {
-  const IMAGES = [
-    { url: 'https://files.pcbcupid.com/Documentation/Boards/g-sense/qmc6309/magnetometer.avif', label: 'ILLUSTRATION VIEW', id: 'illustration' },
-    { url: 'https://files.pcbcupid.com/Documentation/Boards/g-sense/qmc6309/pcbcupid-qmc6309-sideview-1-1000x1000.avif', label: 'BOARD VIEW', id: 'board' },
-  ];
-  const MODEL_URL = "https://raw.githubusercontent.com/pcbcupid/pcbcupid-hardware-libraries/main/pcbcupid_3dmodels/glb/MAGNETOMETER.glb";
-
-}
-
 {/* 
-<div class="centerImg">
+<div style={{ textAlign: "center" }}>
 <img src="https://files.pcbcupid.com/Documentation/Boards/g-sense/qmc6309/magnetometer.avif" alt= "qmc" width="500"/>
 </div>
 */}

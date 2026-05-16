@@ -13,16 +13,16 @@
           {
             "group": "Welcome",
             "pages": [
-              "Documentation/index",
-              "Documentation/Welcome/getting_started",
+              "documentation/index",
+              "documentation/welcome/getting-started",
               {
                 "group": "Prerequisites",
                 "pages": [
-                  "Documentation/Welcome/PREREQUISITES/Arduino_IDE_setup",
-                  "Documentation/Welcome/PREREQUISITES/ESP_IDF",
-                  "Documentation/Welcome/PREREQUISITES/Smowcode_IDE_setup",
-                  "Documentation/Welcome/PREREQUISITES/CC-Studio",
-                  "Documentation/Welcome/PREREQUISITES/Glink"
+                  "documentation/welcome/prerequisites/arduino-ide-setup",
+                  "documentation/welcome/prerequisites/esp-idf",
+                  "documentation/welcome/prerequisites/smowcode-ide-setup",
+                  "documentation/welcome/prerequisites/cc-studio",
+                  "documentation/welcome/prerequisites/glink"
                 ]
               }
             ]
@@ -36,37 +36,37 @@
                   {
                     "group": "ESP32-C3",
                     "pages": [
-                      "Documentation/Modules/Glyph/Glyph_ESP32C3/Overview_Glyph_C3",
-                      "Documentation/Modules/Glyph/Glyph_ESP32C3/Pinouts",
-                      "Documentation/Modules/Glyph/Glyph_ESP32C3/Assembly",
-                      "Documentation/Modules/Glyph/Glyph_ESP32C3/Power_Management"
+                      "documentation/modules/glyph/glyph-esp32c3/overview-glyph-c3",
+                      "documentation/modules/glyph/glyph-esp32c3/pinouts",
+                      "documentation/modules/glyph/glyph-esp32c3/assembly",
+                      "documentation/modules/glyph/glyph-esp32c3/power-management"
                     ]
                   },
                   {
                     "group": "ESP32-C6",
                     "pages": [
-                      "Documentation/Modules/Glyph/Glyph_ESP32C6/Overview_Glyph_C6",
-                      "Documentation/Modules/Glyph/Glyph_ESP32C6/GlyphC6_Pinouts",
-                      "Documentation/Modules/Glyph/Glyph_ESP32C6/GlyphC6_Assembly",
-                      "Documentation/Modules/Glyph/Glyph_ESP32C6/Glyph ESP32-C6 Power Management"
+                      "documentation/modules/glyph/glyph-esp32c6/overview-glyph-c6",
+                      "documentation/modules/glyph/glyph-esp32c6/glyphc6-pinouts",
+                      "documentation/modules/glyph/glyph-esp32c6/glyphc6-assembly",
+                      "documentation/modules/glyph/glyph-esp32c6/glyph-esp32-c6-power-management"
                     ]
                   },
                   {
                     "group": "ESP32-H2",
                     "pages": [
-                      "Documentation/Modules/Glyph/Glyph_ESP32H2/Overview_Glyph_H2",
-                      "Documentation/Modules/Glyph/Glyph_ESP32H2/pinouts_h2",
-                      "Documentation/Modules/Glyph/Glyph_ESP32H2/glyph_assembly",
-                      "Documentation/Modules/Glyph/Glyph_ESP32H2/power_management_glyph"
+                      "documentation/modules/glyph/glyph-esp32h2/overview-glyph-h2",
+                      "documentation/modules/glyph/glyph-esp32h2/pinouts-h2",
+                      "documentation/modules/glyph/glyph-esp32h2/glyph-assembly",
+                      "documentation/modules/glyph/glyph-esp32h2/power-management-glyph"
                     ]
                   },
                   {
                     "group": "ESP32-S3",
                     "pages": [
-                      "Documentation/Modules/Glyph/Glyph_ESP32S3/Glyph-S3 Overview",
-                      "Documentation/Modules/Glyph/Glyph_ESP32S3/Glyph ESP32-S3 Pinouts",
-                      "Documentation/Modules/Glyph/Glyph_ESP32S3/Glyph ESP32-S3 Assembly",
-                      "Documentation/Modules/Glyph/Glyph_ESP32S3/Glyph ESP32-S3 Power Management"
+                      "documentation/modules/glyph/glyph-esp32s3/glyph-s3-overview",
+                      "documentation/modules/glyph/glyph-esp32s3/glyph-esp32-s3-pinouts",
+                      "documentation/modules/glyph/glyph-esp32s3/glyph-esp32-s3-assembly",
+                      "documentation/modules/glyph/glyph-esp32s3/glyph-esp32-s3-power-management"
                     ]
                   }
                 ]
@@ -74,46 +74,46 @@
               {
                 "group": "G-Mod",
                 "pages": [
-                  "Documentation/Modules/G-Mod/1-ch-relay",
-                  "Documentation/Modules/G-Mod/relay",
-                  "Documentation/Modules/G-Mod/SD-Card",
-                  "Documentation/Modules/G-Mod/MCP79412 -RTC",
-                  "Documentation/Modules/G-Mod/PCF8563-RTC",
-                  "Documentation/Modules/G-Mod/Limit Switch",
-                  "Documentation/Modules/G-Mod/WS2812B-LED",
-                  "Documentation/Modules/G-Mod/key-array",
-                  "Documentation/Modules/G-Mod/Serial-Flash",
-                  "Documentation/Modules/G-Mod/Motor driver",
-                  "Documentation/Modules/G-Mod/_Lithium charger"
+                  "documentation/modules/g-mod/1-ch-relay",
+                  "documentation/modules/g-mod/relay",
+                  "documentation/modules/g-mod/sd-card",
+                  "documentation/modules/g-mod/mcp79412-rtc",
+                  "documentation/modules/g-mod/pcf8563-rtc",
+                  "documentation/modules/g-mod/limit-switch",
+                  "documentation/modules/g-mod/ws2812b-led",
+                  "documentation/modules/g-mod/key-array",
+                  "documentation/modules/g-mod/serial-flash",
+                  "documentation/modules/g-mod/motor-driver",
+                  "documentation/modules/g-mod/lithium-charger"
                 ]
               },
               {
                 "group": "G-Sense",
                 "pages": [
-                  "Documentation/Modules/G-Sense/Microphone",
-                  "Documentation/Modules/G-Sense/2-Channel Microphone",
-                  "Documentation/Modules/G-Sense/SHT35",
-                  "Documentation/Modules/G-Sense/SHT45",
-                  "Documentation/Modules/G-Sense/hdc3020-rs485",
-                  "Documentation/Modules/G-Sense/QMC6309-magnetometer",
-                  "Documentation/Modules/G-Sense/Capacitive Touch Slider"
+                  "documentation/modules/g-sense/microphone",
+                  "documentation/modules/g-sense/2-channel-microphone",
+                  "documentation/modules/g-sense/sht35",
+                  "documentation/modules/g-sense/sht45",
+                  "documentation/modules/g-sense/hdc3020-rs485",
+                  "documentation/modules/g-sense/qmc6309-magnetometer",
+                  "documentation/modules/g-sense/capacitive-touch-slider"
                 ]
               },
               {
                 "group": "Breakout Boards",
                 "pages": [
-                  "Documentation/Modules/Breakout_boards/Qwiic_2_in_1",
-                  "Documentation/Modules/Breakout_boards/Qwiic_4_in_1",
-                  "Documentation/Modules/Breakout_boards/USB-4-in-1",
-                  "Documentation/Modules/Breakout_boards/USB-A Breakout (FEMALE)",
-                  "Documentation/Modules/Breakout_boards/USB-A Breakout (MALE)",
-                  "Documentation/Modules/Breakout_boards/USB-C"
+                  "documentation/modules/breakout-boards/qwiic-2-in-1",
+                  "documentation/modules/breakout-boards/qwiic-4-in-1",
+                  "documentation/modules/breakout-boards/usb-4-in-1",
+                  "documentation/modules/breakout-boards/usb-a-breakout-female",
+                  "documentation/modules/breakout-boards/usb-a-breakout-male",
+                  "documentation/modules/breakout-boards/usb-c"
                 ]
               },
               {
                 "group": "G-Kit",
                 "pages": [
-                  "Documentation/Modules/G-Kit/SoundBox"
+                  "documentation/modules/g-kit/soundbox"
                 ]
               }
             ]
@@ -121,7 +121,7 @@
           {
             "group": "Enclosure",
             "pages": [
-              "Documentation/Enclosure/3D Printed Enclosure for GLYPH ESP32 Boards"
+              "documentation/enclosure/3d-printed-enclosure-for-glyph-esp32-boards"
             ]
           }
         ]
@@ -132,55 +132,55 @@
           {
             "group": "Project Examples",
             "pages": [
-              "Guides/EXAMPLES/Arduino_IDE_Blink_Led",
-              "Guides/EXAMPLES/Reading_AnalogInput",
-              "Guides/EXAMPLES/battery_measurement",
-              "Guides/EXAMPLES/I2C_Scan_Test",
-              "Guides/EXAMPLES/BH1750adafruit_compatibility",
-              "Guides/EXAMPLES/LCD",
-              "Guides/EXAMPLES/LCD_I2C",
-              "Guides/EXAMPLES/Rotor encoder with glyph c6",
-              "Guides/EXAMPLES/Servo motor with glyph c6",
-              "Guides/EXAMPLES/Stepper_motor_with_DRV8833",
-              "Guides/EXAMPLES/Temperature_Monitoring_using_GLYPH",
-              "Guides/EXAMPLES/display_test",
-              "Guides/EXAMPLES/TemperatureMonitoring-GLYPH+SH1106OLED",
-              "Guides/EXAMPLES/DHT-OneWire_Communication",
+              "guides/examples/arduino-ide-blink-led",
+              "guides/examples/reading-analoginput",
+              "guides/examples/battery-measurement",
+              "guides/examples/i2c-scan-test",
+              "guides/examples/bh1750adafruit-compatibility",
+              "guides/examples/lcd",
+              "guides/examples/lcd-i2c",
+              "guides/examples/rotor-encoder-with-glyph-c6",
+              "guides/examples/servo-motor-with-glyph-c6",
+              "guides/examples/stepper-motor-with-drv8833",
+              "guides/examples/temperature-monitoring-using-glyph",
+              "guides/examples/display-test",
+              "guides/examples/temperaturemonitoring-glyph+sh1106oled",
+              "guides/examples/dht-onewire-communication",
               {
                 "group": "AI",
                 "pages": [
-                  "Guides/EXAMPLES/AI/ESP32-C3 Voice Chatbot",
-                  "Guides/EXAMPLES/AI/z-claw",
-                  "Guides/EXAMPLES/AI/edge-impulse"
+                  "guides/examples/ai/esp32-c3-voice-chatbot",
+                  "guides/examples/ai/z-claw",
+                  "guides/examples/ai/edge-impulse"
                 ]
               },
               {
                 "group": "Basic Sensors",
                 "pages": [
-                  "Guides/EXAMPLES/Basic Sensors/Ultrasonic Sensor",
-                  "Guides/EXAMPLES/Basic Sensors/Flame Sensor",
-                  "Guides/EXAMPLES/Basic Sensors/Infrared Sensor",
-                  "Guides/EXAMPLES/Basic Sensors/LDR",
-                  "Guides/EXAMPLES/Basic Sensors/MQ2 Sensor"
+                  "guides/examples/basic-sensors/ultrasonic-sensor",
+                  "guides/examples/basic-sensors/flame-sensor",
+                  "guides/examples/basic-sensors/infrared-sensor",
+                  "guides/examples/basic-sensors/ldr",
+                  "guides/examples/basic-sensors/mq2-sensor"
                 ]
               },
               {
                 "group": "Bluetooth",
                 "pages": [
-                  "Guides/EXAMPLES/BLUETOOTH/bluetoothglyph"
+                  "guides/examples/bluetooth/bluetoothglyph"
                 ]
               },
               {
                 "group": "WiFi",
                 "pages": [
-                  "Guides/EXAMPLES/wifi/local webserver to control relay",
-                  "Guides/EXAMPLES/wifi/wifiaccess point"
+                  "guides/examples/wifi/local-webserver-to-control-relay",
+                  "guides/examples/wifi/wifiaccess-point"
                 ]
               },
               {
                 "group": "Zigbee",
                 "pages": [
-                  "Guides/EXAMPLES/zigbee/Arduino_Zigbee_blink"
+                  "guides/examples/zigbee/arduino-zigbee-blink"
                 ]
               }
             ]
@@ -191,33 +191,33 @@
               {
                 "group": "EasyEDA",
                 "pages": [
-                  "Guides/PCB DESIGN/EASYEDA/EASYEDA_INTRO",
-                  "Guides/PCB DESIGN/EASYEDA/IP5306_Battery_Management",
-                  "Guides/PCB DESIGN/EASYEDA/Custom_symbol_in_EasyEDA",
-                  "Guides/PCB DESIGN/EASYEDA/Assigning_footprint_in_EasyEDA",
-                  "Guides/PCB DESIGN/EASYEDA/tp5640 pcblayout",
-                  "Guides/PCB DESIGN/EASYEDA/DRC_&_Gerber_Generation"
+                  "guides/pcb-design/easyeda/easyeda-intro",
+                  "guides/pcb-design/easyeda/ip5306-battery-management",
+                  "guides/pcb-design/easyeda/custom-symbol-in-easyeda",
+                  "guides/pcb-design/easyeda/assigning-footprint-in-easyeda",
+                  "guides/pcb-design/easyeda/tp5640-pcblayout",
+                  "guides/pcb-design/easyeda/drc-and-gerber-generation"
                 ]
               },
               {
                 "group": "KiCad",
                 "pages": [
-                  "Guides/PCB DESIGN/KICAD/Introduction_On_KiCad",
-                  "Guides/PCB DESIGN/KICAD/Kicad_User_Interface",
-                  "Guides/PCB DESIGN/KICAD/Schematic_Editor",
-                  "Guides/PCB DESIGN/KICAD/Prettify_Your_Schematic",
-                  "Guides/PCB DESIGN/KICAD/Performing_ERC_&_Verify_Circuit_In_KiCAD",
-                  "Guides/PCB DESIGN/KICAD/Select_The_Best_Footprint",
-                  "Guides/PCB DESIGN/KICAD/KiCAD’s_Footprint_Assignment_Tool",
-                  "Guides/PCB DESIGN/KICAD/PCB_STACKUP",
-                  "Guides/PCB DESIGN/KICAD/Constraints_and_Net_Class",
-                  "Guides/PCB DESIGN/KICAD/PCB_Layout_editor",
-                  "Guides/PCB DESIGN/KICAD/PCB_Routing",
-                  "Guides/PCB DESIGN/KICAD/DRC_In_KiCad",
-                  "Guides/PCB DESIGN/KICAD/Generate_Gerber_file_In_KiCad",
-                  "Guides/PCB DESIGN/KICAD/Custom_Symbols_in_KiCad",
-                  "Guides/PCB DESIGN/KICAD/Custom_Footprints_in_KiCad",
-                  "Guides/PCB DESIGN/KICAD/Optimize_PCB_in_KiCad"
+                  "guides/pcb-design/kicad/introduction-on-kicad",
+                  "guides/pcb-design/kicad/kicad-user-interface",
+                  "guides/pcb-design/kicad/schematic-editor",
+                  "guides/pcb-design/kicad/prettify-your-schematic",
+                  "guides/pcb-design/kicad/performing-erc-and-verify-circuit-in-kicad",
+                  "guides/pcb-design/kicad/select-the-best-footprint",
+                  "guides/pcb-design/kicad/kicads-footprint-assignment-tool",
+                  "guides/pcb-design/kicad/pcb-stackup",
+                  "guides/pcb-design/kicad/constraints-and-net-class",
+                  "guides/pcb-design/kicad/pcb-layout-editor",
+                  "guides/pcb-design/kicad/pcb-routing",
+                  "guides/pcb-design/kicad/drc-in-kicad",
+                  "guides/pcb-design/kicad/generate-gerber-file-in-kicad",
+                  "guides/pcb-design/kicad/custom-symbols-in-kicad",
+                  "guides/pcb-design/kicad/custom-footprints-in-kicad",
+                  "guides/pcb-design/kicad/optimize-pcb-in-kicad"
                 ]
               }
             ]
@@ -225,7 +225,7 @@
           {
             "group": "PCB Orders",
             "pages": [
-              "Guides/PCB Orders/Ordering from LionCircuits website"
+              "guides/pcb-orders/ordering-from-lioncircuits-website"
             ]
           }
         ]
@@ -259,475 +259,475 @@
   "redirects": [
     {
       "source": "/Enclosure/Enclosure/3d_enclosure_for_glyph_boards",
-      "destination": "/Documentation/Enclosure/3D Printed Enclosure for GLYPH ESP32 Boards"
+      "destination": "/documentation/enclosure/3d-printed-enclosure-for-glyph-esp32-boards"
     },
     {
       "source": "/boards",
-      "destination": "/Documentation/index"
+      "destination": "/documentation/index"
     },
     {
       "source": "/boards/Breakout_boards",
-      "destination": "/Documentation/Modules/Breakout_boards/Qwiic_2_in_1"
+      "destination": "/documentation/modules/breakout-boards/qwiic-2-in-1"
     },
     {
       "source": "/boards/Breakout_boards/Qwiic_2_in_1",
-      "destination": "/Documentation/Modules/Breakout_boards/Qwiic_2_in_1"
+      "destination": "/documentation/modules/breakout-boards/qwiic-2-in-1"
     },
     {
       "source": "/boards/Breakout_boards/Qwiic_4_in_1",
-      "destination": "/Documentation/Modules/Breakout_boards/Qwiic_4_in_1"
+      "destination": "/documentation/modules/breakout-boards/qwiic-4-in-1"
     },
     {
       "source": "/boards/Breakout_boards/USB-4-in-1",
-      "destination": "/Documentation/Modules/Breakout_boards/USB-4-in-1"
+      "destination": "/documentation/modules/breakout-boards/usb-4-in-1"
     },
     {
       "source": "/boards/Breakout_boards/USB-A-FEMALE",
-      "destination": "/Documentation/Modules/Breakout_boards/USB-A Breakout (FEMALE)"
+      "destination": "/documentation/modules/breakout-boards/usb-a-breakout-female"
     },
     {
       "source": "/boards/Breakout_boards/USB-A-MALE",
-      "destination": "/Documentation/Modules/Breakout_boards/USB-A Breakout (MALE)"
+      "destination": "/documentation/modules/breakout-boards/usb-a-breakout-male"
     },
     {
       "source": "/boards/Breakout_boards/USB-C",
-      "destination": "/Documentation/Modules/Breakout_boards/USB-C"
+      "destination": "/documentation/modules/breakout-boards/usb-c"
     },
     {
       "source": "/boards/Enclouser",
-      "destination": "/Documentation/Enclosure/3D Printed Enclosure for GLYPH ESP32 Boards"
+      "destination": "/documentation/enclosure/3d-printed-enclosure-for-glyph-esp32-boards"
     },
     {
       "source": "/boards/basic-sense",
-      "destination": "/Guides/EXAMPLES/Basic Sensors/Ultrasonic Sensor"
+      "destination": "/guides/examples/basic-sensors/ultrasonic-sensor"
     },
     {
       "source": "/boards/examples",
-      "destination": "/Guides/EXAMPLES/Arduino_IDE_Blink_Led"
+      "destination": "/guides/examples/arduino-ide-blink-led"
     },
     {
       "source": "/boards/examples/LDR",
-      "destination": "/Guides/EXAMPLES/Basic Sensors/LDR"
+      "destination": "/guides/examples/basic-sensors/ldr"
     },
     {
       "source": "/boards/examples/adafruit-compatibilty",
-      "destination": "/Guides/EXAMPLES/BH1750adafruit_compatibility"
+      "destination": "/guides/examples/bh1750adafruit-compatibility"
     },
     {
       "source": "/boards/examples/ai",
-      "destination": "/Guides/EXAMPLES/AI/edge-impulse"
+      "destination": "/guides/examples/ai/edge-impulse"
     },
     {
       "source": "/boards/examples/ai/edge-impulse",
-      "destination": "/Guides/EXAMPLES/AI/edge-impulse"
+      "destination": "/guides/examples/ai/edge-impulse"
     },
     {
       "source": "/boards/examples/ai/voice-chatbot",
-      "destination": "/Guides/EXAMPLES/AI/ESP32-C3 Voice Chatbot"
+      "destination": "/guides/examples/ai/esp32-c3-voice-chatbot"
     },
     {
       "source": "/boards/examples/ai/z-claw",
-      "destination": "/Guides/EXAMPLES/AI/z-claw"
+      "destination": "/guides/examples/ai/z-claw"
     },
     {
       "source": "/boards/examples/battery-measurement",
-      "destination": "/Guides/EXAMPLES/battery_measurement"
+      "destination": "/guides/examples/battery-measurement"
     },
     {
       "source": "/boards/examples/blink-led",
-      "destination": "/Guides/EXAMPLES/Arduino_IDE_Blink_Led"
+      "destination": "/guides/examples/arduino-ide-blink-led"
     },
     {
       "source": "/boards/examples/bluetooth",
-      "destination": "/Guides/EXAMPLES/BLUETOOTH/bluetoothglyph"
+      "destination": "/guides/examples/bluetooth/bluetoothglyph"
     },
     {
       "source": "/boards/examples/bluetooth/ble-server",
-      "destination": "/Guides/EXAMPLES/BLUETOOTH/bluetoothglyph"
+      "destination": "/guides/examples/bluetooth/bluetoothglyph"
     },
     {
       "source": "/boards/examples/flame-sensor",
-      "destination": "/Guides/EXAMPLES/Basic Sensors/Flame Sensor"
+      "destination": "/guides/examples/basic-sensors/flame-sensor"
     },
     {
       "source": "/boards/examples/i2c-scan",
-      "destination": "/Guides/EXAMPLES/I2C_Scan_Test"
+      "destination": "/guides/examples/i2c-scan-test"
     },
     {
       "source": "/boards/examples/ir-sensor",
-      "destination": "/Guides/EXAMPLES/Basic Sensors/Infrared Sensor"
+      "destination": "/guides/examples/basic-sensors/infrared-sensor"
     },
     {
       "source": "/boards/examples/lcd",
-      "destination": "/Guides/EXAMPLES/LCD"
+      "destination": "/guides/examples/lcd"
     },
     {
       "source": "/boards/examples/lcd-i2c",
-      "destination": "/Guides/EXAMPLES/LCD_I2C"
+      "destination": "/guides/examples/lcd-i2c"
     },
     {
       "source": "/boards/examples/mq2-gas-detection",
-      "destination": "/Guides/EXAMPLES/Basic Sensors/MQ2 Sensor"
+      "destination": "/guides/examples/basic-sensors/mq2-sensor"
     },
     {
       "source": "/boards/examples/oled-display-test",
-      "destination": "/Guides/EXAMPLES/display_test"
+      "destination": "/guides/examples/display-test"
     },
     {
       "source": "/boards/examples/oled-rest-api",
-      "destination": "/Guides/EXAMPLES/TemperatureMonitoring-GLYPH+SH1106OLED"
+      "destination": "/guides/examples/temperaturemonitoring-glyph+sh1106oled"
     },
     {
       "source": "/boards/examples/onewire",
-      "destination": "/Guides/EXAMPLES/DHT-OneWire_Communication"
+      "destination": "/guides/examples/dht-onewire-communication"
     },
     {
       "source": "/boards/examples/reading-analog-io",
-      "destination": "/Guides/EXAMPLES/Reading_AnalogInput"
+      "destination": "/guides/examples/reading-analoginput"
     },
     {
       "source": "/boards/examples/rest-api",
-      "destination": "/Guides/EXAMPLES/Temperature_Monitoring_using_GLYPH"
+      "destination": "/guides/examples/temperature-monitoring-using-glyph"
     },
     {
       "source": "/boards/examples/rotary-encoder",
-      "destination": "/Guides/EXAMPLES/Rotor encoder with glyph c6"
+      "destination": "/guides/examples/rotor-encoder-with-glyph-c6"
     },
     {
       "source": "/boards/examples/servo-control",
-      "destination": "/Guides/EXAMPLES/Servo motor with glyph c6"
+      "destination": "/guides/examples/servo-motor-with-glyph-c6"
     },
     {
       "source": "/boards/examples/stepper_motor",
-      "destination": "/Guides/EXAMPLES/Stepper_motor_with_DRV8833"
+      "destination": "/guides/examples/stepper-motor-with-drv8833"
     },
     {
       "source": "/boards/examples/ultrasonic-sensor",
-      "destination": "/Guides/EXAMPLES/Basic Sensors/Ultrasonic Sensor"
+      "destination": "/guides/examples/basic-sensors/ultrasonic-sensor"
     },
     {
       "source": "/boards/examples/wifi-access-point",
-      "destination": "/Guides/EXAMPLES/wifi/wifiaccess point"
+      "destination": "/guides/examples/wifi/wifiaccess-point"
     },
     {
       "source": "/boards/examples/wifi-access-with-relay-bulb",
-      "destination": "/Guides/EXAMPLES/wifi/local webserver to control relay"
+      "destination": "/guides/examples/wifi/local-webserver-to-control-relay"
     },
     {
       "source": "/boards/examples/zigbee/arduino-zigbee",
-      "destination": "/Guides/EXAMPLES/zigbee/Arduino_Zigbee_blink"
+      "destination": "/guides/examples/zigbee/arduino-zigbee-blink"
     },
     {
       "source": "/boards/g-kit",
-      "destination": "/Documentation/Modules/G-Kit/SoundBox"
+      "destination": "/documentation/modules/g-kit/soundbox"
     },
     {
       "source": "/boards/g-kit/soundbox",
-      "destination": "/Documentation/Modules/G-Kit/SoundBox"
+      "destination": "/documentation/modules/g-kit/soundbox"
     },
     {
       "source": "/boards/g-mod",
-      "destination": "/Documentation/Modules/G-Mod/1-ch-relay"
+      "destination": "/documentation/modules/g-mod/1-ch-relay"
     },
     {
       "source": "/boards/g-mod/1-ch-relay",
-      "destination": "/Documentation/Modules/G-Mod/1-ch-relay"
+      "destination": "/documentation/modules/g-mod/1-ch-relay"
     },
     {
       "source": "/boards/g-mod/MCP79412-RTC",
-      "destination": "/Documentation/Modules/G-Mod/MCP79412 -RTC"
+      "destination": "/documentation/modules/g-mod/mcp79412-rtc"
     },
     {
       "source": "/boards/g-mod/PCF8563-RTC",
-      "destination": "/Documentation/Modules/G-Mod/PCF8563-RTC"
+      "destination": "/documentation/modules/g-mod/pcf8563-rtc"
     },
     {
       "source": "/boards/g-mod/Serial-Flash",
-      "destination": "/Documentation/Modules/G-Mod/Serial-Flash"
+      "destination": "/documentation/modules/g-mod/serial-flash"
     },
     {
       "source": "/boards/g-mod/key-array",
-      "destination": "/Documentation/Modules/G-Mod/key-array"
+      "destination": "/documentation/modules/g-mod/key-array"
     },
     {
       "source": "/boards/g-mod/limit-switch",
-      "destination": "/Documentation/Modules/G-Mod/Limit Switch"
+      "destination": "/documentation/modules/g-mod/limit-switch"
     },
     {
       "source": "/boards/g-mod/micro-sd",
-      "destination": "/Documentation/Modules/G-Mod/SD-Card"
+      "destination": "/documentation/modules/g-mod/sd-card"
     },
     {
       "source": "/boards/g-mod/motor-driver",
-      "destination": "/Documentation/Modules/G-Mod/Motor driver"
+      "destination": "/documentation/modules/g-mod/motor-driver"
     },
     {
       "source": "/boards/g-mod/relay",
-      "destination": "/Documentation/Modules/G-Mod/relay"
+      "destination": "/documentation/modules/g-mod/relay"
     },
     {
       "source": "/boards/g-sense",
-      "destination": "/Documentation/Modules/G-Sense/Microphone"
+      "destination": "/documentation/modules/g-sense/microphone"
     },
     {
       "source": "/boards/g-sense/2-channel-microphone",
-      "destination": "/Documentation/Modules/G-Sense/2-Channel Microphone"
+      "destination": "/documentation/modules/g-sense/2-channel-microphone"
     },
     {
       "source": "/boards/g-sense/QMC6309-magnetometer",
-      "destination": "/Documentation/Modules/G-Sense/QMC6309-magnetometer"
+      "destination": "/documentation/modules/g-sense/qmc6309-magnetometer"
     },
     {
       "source": "/boards/g-sense/SHT35",
-      "destination": "/Documentation/Modules/G-Sense/SHT35"
+      "destination": "/documentation/modules/g-sense/sht35"
     },
     {
       "source": "/boards/g-sense/SHT45",
-      "destination": "/Documentation/Modules/G-Sense/SHT45"
+      "destination": "/documentation/modules/g-sense/sht45"
     },
     {
       "source": "/boards/g-sense/capacitive-touch-slider",
-      "destination": "/Documentation/Modules/G-Sense/Capacitive Touch Slider"
+      "destination": "/documentation/modules/g-sense/capacitive-touch-slider"
     },
     {
       "source": "/boards/g-sense/hdc3020-rs485",
-      "destination": "/Documentation/Modules/G-Sense/hdc3020-rs485"
+      "destination": "/documentation/modules/g-sense/hdc3020-rs485"
     },
     {
       "source": "/boards/g-sense/ics43434",
-      "destination": "/Documentation/Modules/G-Sense/Microphone"
+      "destination": "/documentation/modules/g-sense/microphone"
     },
     {
       "source": "/boards/glyph-c3",
-      "destination": "/Documentation/Modules/Glyph/Glyph_ESP32C3/Overview_Glyph_C3"
+      "destination": "/documentation/modules/glyph/glyph-esp32c3/overview-glyph-c3"
     },
     {
       "source": "/boards/glyph-c3/assembly",
-      "destination": "/Documentation/Modules/Glyph/Glyph_ESP32C3/Assembly"
+      "destination": "/documentation/modules/glyph/glyph-esp32c3/assembly"
     },
     {
       "source": "/boards/glyph-c3/overview",
-      "destination": "/Documentation/Modules/Glyph/Glyph_ESP32C3/Overview_Glyph_C3"
+      "destination": "/documentation/modules/glyph/glyph-esp32c3/overview-glyph-c3"
     },
     {
       "source": "/boards/glyph-c3/pinouts",
-      "destination": "/Documentation/Modules/Glyph/Glyph_ESP32C3/Pinouts"
+      "destination": "/documentation/modules/glyph/glyph-esp32c3/pinouts"
     },
     {
       "source": "/boards/glyph-c3/power-management",
-      "destination": "/Documentation/Modules/Glyph/Glyph_ESP32C3/Power_Management"
+      "destination": "/documentation/modules/glyph/glyph-esp32c3/power-management"
     },
     {
       "source": "/boards/glyph-c6",
-      "destination": "/Documentation/Modules/Glyph/Glyph_ESP32C6/Overview_Glyph_C6"
+      "destination": "/documentation/modules/glyph/glyph-esp32c6/overview-glyph-c6"
     },
     {
       "source": "/boards/glyph-c6/assembly",
-      "destination": "/Documentation/Modules/Glyph/Glyph_ESP32C6/GlyphC6_Assembly"
+      "destination": "/documentation/modules/glyph/glyph-esp32c6/glyphc6-assembly"
     },
     {
       "source": "/boards/glyph-c6/overview",
-      "destination": "/Documentation/Modules/Glyph/Glyph_ESP32C6/Overview_Glyph_C6"
+      "destination": "/documentation/modules/glyph/glyph-esp32c6/overview-glyph-c6"
     },
     {
       "source": "/boards/glyph-c6/pinouts",
-      "destination": "/Documentation/Modules/Glyph/Glyph_ESP32C6/GlyphC6_Pinouts"
+      "destination": "/documentation/modules/glyph/glyph-esp32c6/glyphc6-pinouts"
     },
     {
       "source": "/boards/glyph-c6/power-management",
-      "destination": "/Documentation/Modules/Glyph/Glyph_ESP32C6/Glyph ESP32-C6 Power Management"
+      "destination": "/documentation/modules/glyph/glyph-esp32c6/glyph-esp32-c6-power-management"
     },
     {
       "source": "/boards/glyph-h2",
-      "destination": "/Documentation/Modules/Glyph/Glyph_ESP32H2/Overview_Glyph_H2"
+      "destination": "/documentation/modules/glyph/glyph-esp32h2/overview-glyph-h2"
     },
     {
       "source": "/boards/glyph-h2/assembly",
-      "destination": "/Documentation/Modules/Glyph/Glyph_ESP32H2/glyph_assembly"
+      "destination": "/documentation/modules/glyph/glyph-esp32h2/glyph-assembly"
     },
     {
       "source": "/boards/glyph-h2/overview",
-      "destination": "/Documentation/Modules/Glyph/Glyph_ESP32H2/Overview_Glyph_H2"
+      "destination": "/documentation/modules/glyph/glyph-esp32h2/overview-glyph-h2"
     },
     {
       "source": "/boards/glyph-h2/pinouts",
-      "destination": "/Documentation/Modules/Glyph/Glyph_ESP32H2/pinouts_h2"
+      "destination": "/documentation/modules/glyph/glyph-esp32h2/pinouts-h2"
     },
     {
       "source": "/boards/glyph-h2/power-management",
-      "destination": "/Documentation/Modules/Glyph/Glyph_ESP32H2/power_management_glyph"
+      "destination": "/documentation/modules/glyph/glyph-esp32h2/power-management-glyph"
     },
     {
       "source": "/boards/glyph-s3",
-      "destination": "/Documentation/Modules/Glyph/Glyph_ESP32S3/Glyph-S3 Overview"
+      "destination": "/documentation/modules/glyph/glyph-esp32s3/glyph-s3-overview"
     },
     {
       "source": "/boards/glyph-s3/assembly",
-      "destination": "/Documentation/Modules/Glyph/Glyph_ESP32S3/Glyph ESP32-S3 Assembly"
+      "destination": "/documentation/modules/glyph/glyph-esp32s3/glyph-esp32-s3-assembly"
     },
     {
       "source": "/boards/glyph-s3/overview",
-      "destination": "/Documentation/Modules/Glyph/Glyph_ESP32S3/Glyph-S3 Overview"
+      "destination": "/documentation/modules/glyph/glyph-esp32s3/glyph-s3-overview"
     },
     {
       "source": "/boards/glyph-s3/pinouts",
-      "destination": "/Documentation/Modules/Glyph/Glyph_ESP32S3/Glyph ESP32-S3 Pinouts"
+      "destination": "/documentation/modules/glyph/glyph-esp32s3/glyph-esp32-s3-pinouts"
     },
     {
       "source": "/boards/glyph-s3/power-management",
-      "destination": "/Documentation/Modules/Glyph/Glyph_ESP32S3/Glyph ESP32-S3 Power Management"
+      "destination": "/documentation/modules/glyph/glyph-esp32s3/glyph-esp32-s3-power-management"
     },
     {
       "source": "/boards/modules/ws2812b-ring",
-      "destination": "/Documentation/Modules/G-Mod/WS2812B-LED"
+      "destination": "/documentation/modules/g-mod/ws2812b-led"
     },
     {
       "source": "/boards/needs",
-      "destination": "/Documentation/Welcome/PREREQUISITES/Arduino_IDE_setup"
+      "destination": "/documentation/welcome/prerequisites/arduino-ide-setup"
     },
     {
       "source": "/boards/needs/CC-Studio",
-      "destination": "/Documentation/Welcome/PREREQUISITES/CC-Studio"
+      "destination": "/documentation/welcome/prerequisites/cc-studio"
     },
     {
       "source": "/boards/needs/arduino-ide-setup",
-      "destination": "/Documentation/Welcome/PREREQUISITES/Arduino_IDE_setup"
+      "destination": "/documentation/welcome/prerequisites/arduino-ide-setup"
     },
     {
       "source": "/boards/needs/esp-idf",
-      "destination": "/Documentation/Welcome/PREREQUISITES/ESP_IDF"
+      "destination": "/documentation/welcome/prerequisites/esp-idf"
     },
     {
       "source": "/boards/needs/glink",
-      "destination": "/Documentation/Welcome/PREREQUISITES/Glink"
+      "destination": "/documentation/welcome/prerequisites/glink"
     },
     {
       "source": "/boards/needs/smowcode-ide-setup",
-      "destination": "/Documentation/Welcome/PREREQUISITES/Smowcode_IDE_setup"
+      "destination": "/documentation/welcome/prerequisites/smowcode-ide-setup"
     },
     {
       "source": "/boards/wifi",
-      "destination": "/Guides/EXAMPLES/wifi/wifiaccess point"
+      "destination": "/guides/examples/wifi/wifiaccess-point"
     },
     {
       "source": "/boards/zigbee",
-      "destination": "/Guides/EXAMPLES/zigbee/Arduino_Zigbee_blink"
+      "destination": "/guides/examples/zigbee/arduino-zigbee-blink"
     },
     {
       "source": "/getting_started",
-      "destination": "/Documentation/Welcome/getting_started"
+      "destination": "/documentation/welcome/getting-started"
     },
     {
       "source": "/markdown-page",
-      "destination": "/Documentation/index"
+      "destination": "/documentation/index"
     },
     {
       "source": "/pcb-design",
-      "destination": "/Guides/PCB DESIGN/EASYEDA/EASYEDA_INTRO"
+      "destination": "/guides/pcb-design/easyeda/easyeda-intro"
     },
     {
       "source": "/pcb-design/easyeda-tutorial",
-      "destination": "/Guides/PCB DESIGN/EASYEDA/EASYEDA_INTRO"
+      "destination": "/guides/pcb-design/easyeda/easyeda-intro"
     },
     {
       "source": "/pcb-design/easyeda-tutorial/easyeda-custom-footprint",
-      "destination": "/Guides/PCB DESIGN/EASYEDA/Assigning_footprint_in_EasyEDA"
+      "destination": "/guides/pcb-design/easyeda/assigning-footprint-in-easyeda"
     },
     {
       "source": "/pcb-design/easyeda-tutorial/easyeda-gerber-generation",
-      "destination": "/Guides/PCB DESIGN/EASYEDA/DRC_&_Gerber_Generation"
+      "destination": "/guides/pcb-design/easyeda/drc-and-gerber-generation"
     },
     {
       "source": "/pcb-design/easyeda-tutorial/easyeda-pcb-layout",
-      "destination": "/Guides/PCB DESIGN/EASYEDA/tp5640 pcblayout"
+      "destination": "/guides/pcb-design/easyeda/tp5640-pcblayout"
     },
     {
       "source": "/pcb-design/easyeda-tutorial/easyeda-schematic-editor",
-      "destination": "/Guides/PCB DESIGN/EASYEDA/IP5306_Battery_Management"
+      "destination": "/guides/pcb-design/easyeda/ip5306-battery-management"
     },
     {
       "source": "/pcb-design/easyeda-tutorial/easyeda-symbol-editor",
-      "destination": "/Guides/PCB DESIGN/EASYEDA/Custom_symbol_in_EasyEDA"
+      "destination": "/guides/pcb-design/easyeda/custom-symbol-in-easyeda"
     },
     {
       "source": "/pcb-design/easyeda-tutorial/introduction-to-easyeda",
-      "destination": "/Guides/PCB DESIGN/EASYEDA/EASYEDA_INTRO"
+      "destination": "/guides/pcb-design/easyeda/easyeda-intro"
     },
     {
       "source": "/pcb-design/kicad-tutorial",
-      "destination": "/Guides/PCB DESIGN/KICAD/Introduction_On_KiCad"
+      "destination": "/guides/pcb-design/kicad/introduction-on-kicad"
     },
     {
       "source": "/pcb-design/kicad-tutorial/introduction-to-kicad",
-      "destination": "/Guides/PCB DESIGN/KICAD/Introduction_On_KiCad"
+      "destination": "/guides/pcb-design/kicad/introduction-on-kicad"
     },
     {
       "source": "/pcb-design/kicad-tutorial/kicad-constraints-net-class-directive",
-      "destination": "/Guides/PCB DESIGN/KICAD/Constraints_and_Net_Class"
+      "destination": "/guides/pcb-design/kicad/constraints-and-net-class"
     },
     {
       "source": "/pcb-design/kicad-tutorial/kicad-custom-footprint",
-      "destination": "/Guides/PCB DESIGN/KICAD/Custom_Footprints_in_KiCad"
+      "destination": "/guides/pcb-design/kicad/custom-footprints-in-kicad"
     },
     {
       "source": "/pcb-design/kicad-tutorial/kicad-custom-symbols",
-      "destination": "/Guides/PCB DESIGN/KICAD/Custom_Symbols_in_KiCad"
+      "destination": "/guides/pcb-design/kicad/custom-symbols-in-kicad"
     },
     {
       "source": "/pcb-design/kicad-tutorial/kicad-drc",
-      "destination": "/Guides/PCB DESIGN/KICAD/DRC_In_KiCad"
+      "destination": "/guides/pcb-design/kicad/drc-in-kicad"
     },
     {
       "source": "/pcb-design/kicad-tutorial/kicad-electrical-rule-checker",
-      "destination": "/Guides/PCB DESIGN/KICAD/Performing_ERC_&_Verify_Circuit_In_KiCAD"
+      "destination": "/guides/pcb-design/kicad/performing-erc-and-verify-circuit-in-kicad"
     },
     {
       "source": "/pcb-design/kicad-tutorial/kicad-footprint-assignment-tool",
-      "destination": "/Guides/PCB DESIGN/KICAD/KiCAD’s_Footprint_Assignment_Tool"
+      "destination": "/guides/pcb-design/kicad/kicads-footprint-assignment-tool"
     },
     {
       "source": "/pcb-design/kicad-tutorial/kicad-footprint-selection",
-      "destination": "/Guides/PCB DESIGN/KICAD/Select_The_Best_Footprint"
+      "destination": "/guides/pcb-design/kicad/select-the-best-footprint"
     },
     {
       "source": "/pcb-design/kicad-tutorial/kicad-gerber-generation",
-      "destination": "/Guides/PCB DESIGN/KICAD/Generate_Gerber_file_In_KiCad"
+      "destination": "/guides/pcb-design/kicad/generate-gerber-file-in-kicad"
     },
     {
       "source": "/pcb-design/kicad-tutorial/kicad-pcb-layout-editor",
-      "destination": "/Guides/PCB DESIGN/KICAD/PCB_Layout_editor"
+      "destination": "/guides/pcb-design/kicad/pcb-layout-editor"
     },
     {
       "source": "/pcb-design/kicad-tutorial/kicad-pcb-optimization",
-      "destination": "/Guides/PCB DESIGN/KICAD/Optimize_PCB_in_KiCad"
+      "destination": "/guides/pcb-design/kicad/optimize-pcb-in-kicad"
     },
     {
       "source": "/pcb-design/kicad-tutorial/kicad-pcb-routing",
-      "destination": "/Guides/PCB DESIGN/KICAD/PCB_Routing"
+      "destination": "/guides/pcb-design/kicad/pcb-routing"
     },
     {
       "source": "/pcb-design/kicad-tutorial/kicad-pcb-stackup",
-      "destination": "/Guides/PCB DESIGN/KICAD/PCB_STACKUP"
+      "destination": "/guides/pcb-design/kicad/pcb-stackup"
     },
     {
       "source": "/pcb-design/kicad-tutorial/kicad-schematic-editor",
-      "destination": "/Guides/PCB DESIGN/KICAD/Schematic_Editor"
+      "destination": "/guides/pcb-design/kicad/schematic-editor"
     },
     {
       "source": "/pcb-design/kicad-tutorial/kicad-schematic-prettify",
-      "destination": "/Guides/PCB DESIGN/KICAD/Prettify_Your_Schematic"
+      "destination": "/guides/pcb-design/kicad/prettify-your-schematic"
     },
     {
       "source": "/pcb-design/kicad-tutorial/kicad-user-interface",
-      "destination": "/Guides/PCB DESIGN/KICAD/Kicad_User_Interface"
+      "destination": "/guides/pcb-design/kicad/kicad-user-interface"
     },
     {
       "source": "/pcb-order",
-      "destination": "/Guides/PCB Orders/Ordering from LionCircuits website"
+      "destination": "/guides/pcb-orders/ordering-from-lioncircuits-website"
     },
     {
       "source": "/pcb-orders/lioncircuits",
-      "destination": "/Guides/PCB Orders/Ordering from LionCircuits website"
+      "destination": "/guides/pcb-orders/ordering-from-lioncircuits-website"
     }
   ],
   "thumbnails": {
