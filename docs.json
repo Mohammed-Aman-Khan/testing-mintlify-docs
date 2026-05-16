@@ -8,11 +8,11 @@
   "navigation": {
     "groups": [
       {
-        "group": "Introduction",
+        "group": "Welcome",
         "pages": [
-          "getting_started"
-        ],
-        "hidden": true
+          "index",
+          "Welcome/getting_started"
+        ]
       },
       {
         "group": "Boards",
