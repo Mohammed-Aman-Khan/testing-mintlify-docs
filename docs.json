@@ -729,5 +729,8 @@
       "source": "/pcb-orders/lioncircuits",
       "destination": "/Guides/PCB Orders/Ordering from LionCircuits website"
     }
-  ]
+  ],
+  "thumbnails": {
+    "appearance": "dark"
+  }
 }
