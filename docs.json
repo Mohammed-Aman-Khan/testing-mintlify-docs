@@ -13,7 +13,7 @@
           {
             "group": "Welcome",
             "pages": [
-              "documentation/index",
+              "",
               "documentation/welcome/getting-started",
               {
                 "group": "Prerequisites",
